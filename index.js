@@ -1,14 +1,28 @@
 function openNav() {
-    document.getElementById("mySidebar").style.width = "200px";
-    document.getElementById("main").style.marginLeft = "200px";
-    //$(".openbtn").hide();
+    console.log(screen.width)
+    if (screen.width >= 700) {
+        document.getElementById("mySidebar").style.width = "200px";
+        document.getElementById("main").style.marginLeft = "200px";
+        document.getElementById("open").style.display = "None";
+    }
+    else {
+        document.getElementById("mySidebar").style.display = "Block";
+    }
 }
 
+
 function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-    //$(".openbtn").show();
+    if (screen.width >= 700) {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.getElementById("open").style.display = "Block";
+    }
+    else {
+        document.getElementById("mySidebar").style.display = "None";
+    }
+
 }
+
 
 
 

@@ -199,10 +199,12 @@ h2:hover {
 
     @keyframes introduction {
         from {
-            font-size: 225%;
+            font-size: 150%;
+            color: white;
         }
 
         to {
+            font-size: 180%;
             color: #10f5a9;
         }
     }

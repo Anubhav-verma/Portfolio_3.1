@@ -1,10 +1,16 @@
+:root {
+    --backgorund-theme-color: rgb(27, 24, 24);
+    --font-color: #10f5a9;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(27, 24, 24);
+    background-color: var(--backgorund-theme-color);
+
 }
 
 .welcome {
-    font-family: Comic Sans MS;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h2 {
@@ -12,15 +18,34 @@ h2 {
     transition: font-size 2s, color 1s;
 }
 
-h2:hover {
+
+/*h2:hover {
     font-size: 300%;
     color: #10f5a9;
+}*/
+
+.Introduction,
+#Hi,
+#I,
+#am,
+#Anubhav {
+    color: white;
+    font-size: 250%;
 }
 
-.Introduction {
-    color: white;
-    font-size: 225%;
+.typewrite {
+    font-size: 80%;
+    color: var(--font-color);
+    font-family: monospace;
 
+}
+
+#Hi {
+    animation-name: introduction;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
 }
 
 #I {
@@ -51,11 +76,10 @@ h2:hover {
 
 @keyframes introduction {
     from {
-        font-size: 225%;
+        color: white;
     }
 
     to {
-        font-size: 300%;
         color: #10f5a9;
     }
 }
@@ -156,6 +180,14 @@ h2:hover {
     padding: 16px;
 }
 
+.row.content {
+    height: 1000px
+}
+
+.jumbotron {
+    background-color: var(--backgorund-theme-color);
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidebar {
@@ -199,14 +231,16 @@ h2:hover {
 
     @keyframes introduction {
         from {
-            font-size: 150%;
             color: white;
         }
 
         to {
-            font-size: 180%;
             color: #10f5a9;
         }
+    }
+
+    .row.content {
+        height: auto;
     }
 
 }

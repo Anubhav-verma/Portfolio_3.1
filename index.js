@@ -15,7 +15,7 @@ function closeNav() {
     if (screen.width >= 700) {
         document.getElementById("mySidebar").style.width = "0";
         document.getElementById("main").style.marginLeft = "0";
-        document.getElementById("open").style.display = "Block";
+        document.getElementById("open").style.display = "inline";
     }
     else {
         document.getElementById("mySidebar").style.display = "None";

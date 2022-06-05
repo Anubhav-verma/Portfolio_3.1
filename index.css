@@ -1,6 +1,7 @@
 :root {
     --backgorund-theme-color: rgb(27, 24, 24);
-    --font-color: #10f5a9;
+    --theme-color: #10f5a9;
+    --theme-color-2: #FD2155;
 }
 
 body {
@@ -24,6 +25,10 @@ h2 {
     color: #10f5a9;
 }*/
 
+.openbtn:hover {
+    color: var(--theme-color);
+}
+
 .Introduction,
 #Hi,
 #I,
@@ -33,11 +38,33 @@ h2 {
     font-size: 250%;
 }
 
+.blinking-box {
+
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
 .typewrite {
     font-size: 80%;
-    color: var(--font-color);
+    color: var(--theme-color);
     font-family: monospace;
 
+}
+
+.long-button {
+    width: 200px;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: solid;
+    border-color: #10f5a9;
+    color: white;
+}
+
+.long-button:hover {
+    background-color: var(--theme-color-2);
 }
 
 #Hi {
@@ -241,6 +268,29 @@ h2 {
 
     .row.content {
         height: auto;
+    }
+
+    .typewrite {
+        margin-top: 25px;
+        display: block;
+        font-size: 60%;
+    }
+
+    .typewrite:hover {
+        color: var(--theme-color-2);
+    }
+
+    .type {
+        display: none;
+    }
+
+    .Introduction,
+    #Hi,
+    #I,
+    #am,
+    #Anubhav {
+        color: white;
+        font-size: 200%;
     }
 
 }

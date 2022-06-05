@@ -39,13 +39,16 @@ h2 {
 }
 
 .blinking-box {
-
-    width: 10px;
-    height: 10px;
+    width: 100px;
+    height: 100px;
+    position: relative;
     background-color: white;
-    animation-name: example;
-    animation-duration: 4s;
+    animation-name: skill-rain;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
 }
+
 
 .typewrite {
     font-size: 80%;
@@ -57,9 +60,7 @@ h2 {
 .long-button {
     width: 200px;
     margin-top: 10px;
-    background-color: rgba(0, 0, 0, 0);
-    border-style: solid;
-    border-color: #10f5a9;
+    background-color: var(--theme-color);
     color: white;
 }
 
@@ -108,6 +109,16 @@ h2 {
 
     to {
         color: #10f5a9;
+    }
+}
+
+@keyframes skill-rain {
+    0% {
+        top: 0;
+    }
+
+    25% {
+        top: 600px;
     }
 }
 

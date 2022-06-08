@@ -68,6 +68,17 @@ h2 {
     background-color: var(--theme-color-2);
 }
 
+.long-button-2 {
+    width: 200px;
+    margin-top: 10px;
+    background-color: var(--theme-color-2);
+    color: white;
+}
+
+.long-button-2:hover {
+    background-color: var(--theme-color);
+}
+
 #Hi {
     animation-name: introduction;
     animation-duration: 2s;
@@ -325,7 +336,7 @@ h2 {
 .container-copy {
     box-sizing: border-box;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     height: 100vh;
 }
 
@@ -375,7 +386,7 @@ h2 {
     50% {
         color: #10f5a900;
         width: 60px;
-        height: 150px;
+        height: 400px;
         background: var(--theme-color);
         box-shadow: 10px 10px 10px #cccccc,
             10px 10px 10px var(--theme-color-2),
@@ -386,8 +397,8 @@ h2 {
     100% {
         padding-top: 35px;
         font-size: 300%;
-        width: 300px;
-        height: 150px;
+        width: 500px;
+        height: 400px;
         background: var(--theme-color);
         box-shadow: 40px 40px 40px var(--theme-color),
             0 0 0 var(--theme-color-2),

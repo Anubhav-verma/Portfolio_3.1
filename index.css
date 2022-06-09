@@ -354,6 +354,7 @@ span:hover {
     .contact {
         font-size: 140%;
     }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -406,7 +407,7 @@ span:hover {
         padding-top: 30px;
         background: var(--theme-color);
         box-shadow: 0 0 0 #cccccc,
-            0 0 0 var(--theme-color-2),
+            0 0 0 #cccccc,
             10px 10px 10px #cccccc inset,
             -10px -10px 10px #ffffff inset;
     }
@@ -417,7 +418,7 @@ span:hover {
         height: 60px;
         background: var(--theme-color);
         box-shadow: 10px 10px 10px #cccccc,
-            10px 10px 10px var(--theme-color-2),
+            10px 10px 10px #cccccc,
             0 0 0 #cccccc inset,
             0 0 0 #ffffff inset;
     }
@@ -428,7 +429,7 @@ span:hover {
         height: 400px;
         background: var(--theme-color);
         box-shadow: 10px 10px 10px #cccccc,
-            10px 10px 10px var(--theme-color-2),
+            10px 10px 10px #cccccc,
             0 0 0 #cccccc inset,
             0 0 0 #ffffff inset;
     }
@@ -440,8 +441,8 @@ span:hover {
         height: 400px;
         background: var(--theme-color);
         box-shadow: 40px 40px 40px var(--theme-color),
-            0 0 0 var(--theme-color-2),
-            0 0 0 var(--theme-color-2) inset,
+            0 0 0 #cccccc,
+            0 0 0 #cccccc inset,
             2px 2px 2px var(--theme-color) inset;
     }
 }

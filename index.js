@@ -26,8 +26,16 @@ function closeNav() {
 }
 
 function about(Id, alignment) {
-    console.log("Hi");
-    document.getElementById(Id).scrollIntoView({ block: alignment });
+    console.log(Id);
+    if (Id == 'Skills') {
+        box = document.getElementById("animated-card");
+        box.innerHTML = 'ASP .NET MVC<br>Javascript<br>Robot Framework<br>Java<br>DB2';
+        box.scrollIntoView({ block: alignment });
+    }
+    else {
+        document.getElementById(Id).scrollIntoView({ block: alignment });
+    }
+
 }
 
 /*var skills = ["JavaScript", "Python", "C#", "Robot Framework"];

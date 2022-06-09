@@ -4,6 +4,7 @@ function openNav() {
         document.getElementById("mySidebar").style.width = "200px";
         document.getElementById("main").style.marginLeft = "200px";
         document.getElementById("open").style.display = "None";
+        document.getElementById("main-2").style.marginLeft = "200px";
     }
     else {
         document.getElementById("mySidebar").style.display = "Block";
@@ -16,6 +17,7 @@ function closeNav() {
         document.getElementById("mySidebar").style.width = "0";
         document.getElementById("main").style.marginLeft = "0";
         document.getElementById("open").style.display = "inline";
+        document.getElementById("main-2").style.marginLeft = "0";
     }
     else {
         document.getElementById("mySidebar").style.display = "None";
@@ -23,7 +25,10 @@ function closeNav() {
 
 }
 
-
+function about(Id, alignment) {
+    console.log("Hi");
+    document.getElementById(Id).scrollIntoView({ block: alignment });
+}
 
 /*var skills = ["JavaScript", "Python", "C#", "Robot Framework"];
 

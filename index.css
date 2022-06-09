@@ -4,6 +4,10 @@
     --theme-color-2: #FD2155;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: var(--backgorund-theme-color);
@@ -20,10 +24,14 @@ h2 {
 }
 
 
-/*h2:hover {
-    font-size: 300%;
+h2:hover {
+
     color: #10f5a9;
-}*/
+}
+
+span:hover {
+    color: var(--theme-color);
+}
 
 .openbtn:hover {
     color: var(--theme-color);
@@ -36,6 +44,20 @@ h2 {
 #Anubhav {
     color: white;
     font-size: 250%;
+}
+
+.Matter-About {
+    color: grey;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 200%;
+    word-wrap: break-word;
+    text-justify: inter-word;
+
+}
+
+.Matter-Head {
+    margin-top: 40%;
+    color: var(--theme-color);
 }
 
 .blinking-box {
@@ -316,6 +338,22 @@ h2 {
         font-size: 200%;
     }
 
+    .Matter-About {
+
+
+        font-size: 150%;
+        word-wrap: break-word;
+        text-justify: inter-word;
+    }
+
+    .Matter-Head {
+        font-size: 170%;
+        color: var(--theme-color);
+    }
+
+    .contact {
+        font-size: 140%;
+    }
 }
 
 @media screen and (max-width: 400px) {

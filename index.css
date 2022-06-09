@@ -206,7 +206,7 @@ span:hover {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #000;
+    background-color: black;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -294,6 +294,7 @@ span:hover {
         width: 100%;
         height: auto;
         position: relative;
+        margin: 0;
     }
 
     .sidebar a {
@@ -315,7 +316,7 @@ span:hover {
 
     .logo {
         display: none;
-        text-align: center;
+        text-align: left;
     }
 
     @keyframes introduction {

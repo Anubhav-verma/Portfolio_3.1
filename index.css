@@ -351,6 +351,7 @@ h2 {
     text-align: center;
     align-self: center;
     justify-self: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-shadow: 0 0 0 #cccccc,
         0 0 0 #ffffff,
         10px 10px 10px #cccccc inset,

@@ -25,7 +25,20 @@ function closeNav() {
 
 
 
+/*var skills = ["JavaScript", "Python", "C#", "Robot Framework"];
 
+
+
+while (1 == 1) {
+    skills.forEach(myfunction);
+}
+function myfunction(item) {
+    console.log(item);
+    card = document.getElementById("animated-card")
+    card.innerHTML = item;
+    setTimeout(myfunction(item)
+        , 5000);
+};*/
 
 
 

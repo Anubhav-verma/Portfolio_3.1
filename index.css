@@ -295,6 +295,7 @@ span:hover {
         height: auto;
         position: relative;
         margin: 0;
+        padding-top: 1px;
     }
 
     .sidebar a {
@@ -312,6 +313,7 @@ span:hover {
     .logo-moblile {
         display: block;
         text-align: center;
+        z-index: -1;
     }
 
     .logo {

@@ -277,6 +277,17 @@ span:hover {
     background-color: var(--backgorund-theme-color);
 }
 
+.desclaimer {
+    display: block;
+    color: var(--theme-color);
+    width: 100%;
+    text-align: center;
+    align-self: stretch;
+    position: static;
+    bottom: 0;
+    background-color: var(--backgorund-theme-color);
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidebar {
@@ -373,6 +384,17 @@ span:hover {
 
     .contact {
         font-size: 140%;
+    }
+
+    .desclaimer {
+        display: block;
+        color: var(--theme-color);
+        width: 100%;
+        text-align: center;
+        align-self: stretch;
+        position: fixed;
+        bottom: 0;
+        background-color: var(--backgorund-theme-color);
     }
 
 }

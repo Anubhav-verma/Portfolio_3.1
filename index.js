@@ -174,4 +174,57 @@ function sendEmail() {
         .then(function (message) {
             alert("Mail has been sent successfully")
         });
-} 
+}
+
+var cube = document.querySelector('.cube');
+
+var perspective = 800;
+cube.style.transform = 'perspective(' + perspective + 'px)';
+
+// create an array of rotation angles to loop through
+var rotationAngles = [0, 90, 180, 270];
+
+// set up a variable to keep track of the current rotation angle
+var currentRotationAngle = 0;
+
+// rotate the cube every 5 seconds
+setInterval(function () {
+    cube.style.transform += 'rotateY(90deg)';
+}, 1000);
+
+document.addEventListener('mousemove', function (e) {
+    var x = e.clientX / window.innerWidth * 360;
+    var y = e.clientY / window.innerHeight * 360;
+    cube.style.transform = 'rotateX(' + y + 'deg) rotateY(' + x + 'deg)';
+});
+
+document.addEventListener('touchmove', function (e) {
+    var x = e.touches[0].clientX / window.innerWidth * 360;
+    var y = e.touches[0].clientY / window.innerHeight * 360;
+    cube.style.transform = 'rotateX(' + y + 'deg) rotateY(' + x + 'deg)';
+});
+
+// calculate the current rotation angle
+var regex = /rotateY\((-?\d+)deg\)/;
+var match = regex.exec(cube.style.transform);
+if (match) {
+    currentRotationAngle = parseInt(match[1], 10);
+}
+
+// rotate the cube 360 degrees in the next direction in the array
+var nextRotationAngleIndex = rotationAngles.indexOf(currentRotationAngle) + 1;
+if (nextRotationAngleIndex >= rotationAngles.length) {
+    nextRotationAngleIndex = 0;
+}
+var nextRotationAngle = rotationAngles[nextRotationAngleIndex];
+var rotation = 'rotateY(' + nextRotationAngle + 'deg)';
+cube.addEventListener('animationiteration', function () {
+    cube.style.transform = 'perspective(' + perspective + 'px) ' + rotation;
+    currentRotationAngle = nextRotationAngle;
+    nextRotationAngleIndex = rotationAngles.indexOf(currentRotationAngle) + 1;
+    if (nextRotationAngleIndex >= rotationAngles.length) {
+        nextRotationAngleIndex = 0;
+    }
+    nextRotationAngle = rotationAngles[nextRotationAngleIndex];
+    rotation = 'rotateY(' + nextRotationAngle + 'deg)';
+});

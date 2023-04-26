@@ -228,3 +228,15 @@ cube.addEventListener('animationiteration', function () {
     nextRotationAngle = rotationAngles[nextRotationAngleIndex];
     rotation = 'rotateY(' + nextRotationAngle + 'deg)';
 });
+
+document.addEventListener('mousemove', function (e) {
+    var cursorTrail = document.querySelector('.cursor-trail');
+    var trailElement = document.createElement('div');
+    trailElement.classList.add('trail');
+    trailElement.style.left = e.clientX + 'px';
+    trailElement.style.top = e.clientY + 'px';
+    cursorTrail.appendChild(trailElement);
+    setTimeout(function () {
+        cursorTrail.removeChild(trailElement);
+    }, 500);
+});

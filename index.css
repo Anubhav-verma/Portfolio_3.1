@@ -493,7 +493,7 @@ span:hover {
     width: 600px;
     height: 600px;
     margin: 0 auto;
-    perspective: 800px;
+    perspective: 8000px;
 
 }
 
@@ -501,7 +501,7 @@ span:hover {
     position: relative;
     width: 400px;
     height: 400px;
-    margin: 100px auto;
+    margin: 100px 300px;
     transform-style: preserve-3d;
     transition: transform 1s;
 }
